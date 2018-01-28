@@ -30,7 +30,7 @@ export class WelcomePage {
   }
 
   ionViewDidLoad() {
-    var shows = new Shows();
+  ///var shows = new Shows();
     console.log('ionViewDidLoad WelcomePage');
     /// shows.getShows().then((data) => {
     ///  console.log(data);

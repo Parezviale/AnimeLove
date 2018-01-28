@@ -7,7 +7,7 @@ export class Shows {
  
   data: any;
  
-  constructor(http : Http) {
+  constructor(public http: Http) {
     this.data = null;
   }
  
