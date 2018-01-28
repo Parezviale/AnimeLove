@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import {Observable} from 'rxjs/Observable';
 import 'rxjs/add/operator/map';
 
-import { UserSignup } from '../user-signup/user-signup';
 
 export class User {
   name: string;

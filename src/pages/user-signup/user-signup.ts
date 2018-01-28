@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 import { NavController, AlertController, LoadingController, Loading, IonicPage, NavParams} from 'ionic-angular';
-import { AuthService } from '../../providers/auth-service/auth-service';
-
 import { ExplorePage } from '../explore/explore';
 import { UserLogin } from '../user-login/user-login';
 import { UserForgotpassword } from '../user-forgotpassword/user-forgotpassword';
@@ -24,17 +22,7 @@ export class UserSignup {
   }
 
   public login() {
-    this.showLoading()
-    this.auth.login(this.registerCredentials).subscribe(allowed => {
-      if (allowed) {
-        this.nav.setRoot('HomePage');
-      } else {
-        this.showError("Access Denied");
-      }
-    },
-      error => {
-        this.showError(error);
-      });
+    this.showLoading();
   }
 
   showLoading() {

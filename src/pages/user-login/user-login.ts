@@ -3,7 +3,6 @@ import { NavController, AlertController, LoadingController, Loading, IonicPage, 
 import { AuthService } from '../../providers/auth-service/auth-service';
 
 import { ExplorePage } from '../explore/explore';
-import { UserLogin } from '../user-login/user-login';
 import { UserSignup } from '../user-signup/user-signup';
 import { UserForgotpassword } from '../user-forgotpassword/user-forgotpassword';
 
