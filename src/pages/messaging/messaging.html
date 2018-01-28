@@ -1,0 +1,54 @@
+<ion-header no-border>
+  <ion-navbar color="white" hideBackButton>
+    <ion-buttons start>
+      <button ion-button clear (click)="goToExplore()">
+        <img src="assets/img/logo_bw.png" width="24" alt="">
+      </button>
+    </ion-buttons>
+    <ion-title>
+      <button ion-button icon-only clear>
+        <ion-icon name="menu" color="danger"></ion-icon>
+      </button>
+    </ion-title>
+  </ion-navbar>
+
+  <ion-toolbar color="white">
+    <ion-searchbar placeholder="Search Matches"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div>
+    <div class="wrapper-xs padder">
+      <div ion-text color="danger" class="font-bold">
+        Matches
+      </div>
+    </div>
+    <div class="wrapper-xs padder-sm">
+      <ion-row align-items-center (click)="goToChat()">
+        <ion-col col-auto>
+          <demo-avatar [sizeClass]="'thumb-md'"></demo-avatar>
+        </ion-col>
+        <ion-col>
+          <div>
+            <div class="text-lg">Waifu Match</div>
+            <div class="text-muted">Mecha, Action adventure</div>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row align-items-center (click)="goToChat()">
+        <ion-col col-auto>
+          <demo-avatar [sizeClass]="'thumb-md'"></demo-avatar>
+        </ion-col>
+        <ion-col>
+          <div>
+            <div class="text-lg">Another Match</div>
+            <div class="text-muted">Comedy, fantasy</div>
+          </div>
+        </ion-col>
+      </ion-row>
+    </div>
+  </div>
+
+</ion-content>
