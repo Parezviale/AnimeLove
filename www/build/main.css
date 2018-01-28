@@ -61866,6 +61866,10 @@ ion-textarea[fz-elastic] .text-input.text-input-md {
   padding-right: 12px;
 }
 
+page-dashboard ion-slides {
+  max-height: 23%;
+}
+
 /* CSS Helper ver 1.1.1 */
 /* FLEX from Google Polymer 0.5.2 */
 html [layout][horizontal], html [layout][vertical] {
@@ -63735,6 +63739,72 @@ page-tinder-plus .tinder-plus-banner .cta {
   top: 30%;
   left: 0;
   width: 100%;
+}
+
+.ios page-user-forgotpassword .toolbar-background, .md page-user-forgotpassword .toolbar-background, .wp page-user-forgotpassword .toolbar-background {
+  background: transparent;
+  border-style: none;
+}
+
+.ios page-user-forgotpassword .toolbar::after, .ios page-user-forgotpassword .header-md::after, .md page-user-forgotpassword .toolbar::after, .md page-user-forgotpassword .header-md::after, .wp page-user-forgotpassword .toolbar::after, .wp page-user-forgotpassword .header-md::after {
+  background-image: none;
+}
+
+.ios page-user-forgotpassword ion-content, .md page-user-forgotpassword ion-content, .wp page-user-forgotpassword ion-content {
+  background-color: #488aff;
+  background-image: url("../assets/images/bg-pattern.png");
+  background-size: 100% auto;
+}
+
+.ios page-user-forgotpassword .item, .md page-user-forgotpassword .item, .wp page-user-forgotpassword .item {
+  border: #ccc 1px solid !important;
+  margin-bottom: 10px;
+}
+
+.ios page-user-login .toolbar-background, .md page-user-login .toolbar-background, .wp page-user-login .toolbar-background {
+  background: transparent;
+  border-style: none;
+}
+
+.ios page-user-login .toolbar::after, .ios page-user-login .header-md::after, .md page-user-login .toolbar::after, .md page-user-login .header-md::after, .wp page-user-login .toolbar::after, .wp page-user-login .header-md::after {
+  background-image: none;
+}
+
+.ios page-user-login ion-content, .md page-user-login ion-content, .wp page-user-login ion-content {
+  background-color: #488aff;
+  background-image: url("../assets/images/bg-pattern.png");
+  background-size: 100% auto;
+}
+
+.ios page-user-login .centerAlign, .md page-user-login .centerAlign, .wp page-user-login .centerAlign {
+  display: table-cell;
+  vertical-align: middle;
+  border: #ff0000 1px solid;
+}
+
+.ios page-user-login .item, .md page-user-login .item, .wp page-user-login .item {
+  border: #ccc 1px solid !important;
+  margin-bottom: 10px;
+}
+
+.ios page-user-signup .toolbar-background, .md page-user-signup .toolbar-background, .wp page-user-signup .toolbar-background {
+  background: transparent;
+  border-style: none;
+}
+
+.ios page-user-signup .toolbar::after, .ios page-user-signup .header-md::after, .md page-user-signup .toolbar::after, .md page-user-signup .header-md::after, .wp page-user-signup .toolbar::after, .wp page-user-signup .header-md::after {
+  background-image: none;
+}
+
+.ios page-user-signup ion-content, .md page-user-signup ion-content, .wp page-user-signup ion-content {
+  background-color: #488aff;
+  background-image: url("../assets/images/bg-pattern.png");
+  background-size: 100% auto;
+}
+
+.ios page-user-signup .item, .md page-user-signup .item, .wp page-user-signup .item {
+  border: #ccc 1px solid !important;
+  margin-bottom: 10px;
 }
 
 page-welcome .swiper-wrapper {

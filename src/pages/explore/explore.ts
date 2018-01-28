@@ -58,46 +58,34 @@ export class ExplorePage {
     this.cards = [];
     this.users = [
       {
-        id: 1,
-        name: 'Hieu Pham',
-        age: 29,
-        job_title: 'UX/UI lover',
-        profile_image_url: 'assets/img/hieu.png'
-      },
-      {
         id: 2,
-        name: 'Adam Saddler',
-        age: 39,
-        job_title: 'Ionic Team is awesome',
-        profile_image_url: 'assets/img/adam.png'
+        name: 'Kimi no Na wa.',
+        job_title: 'Supernatural, Drama, Romance',
+        profile_image_url: 'assets/img/adam.jpg'
       },
       {
         id: 3,
-        name: 'Ben Affleck',
-        age: 30,
-        job_title: 'Another awesome Ionic guy',
-        profile_image_url: 'assets/img/ben.png'
+        name: 'Fullmetal Alchemist: Brotherhood',
+        job_title: 'Action, Military, Adventure',
+        profile_image_url: 'assets/img/ben.jpg'
       },
       {
         id: 4,
-        name: 'Max Payne',
-        age: 35,
-        job_title: 'Game character assasin',
-        profile_image_url: 'assets/img/max.png'
+        name: 'Gintama°',
+        job_title: 'Action, Comedy, Historical',
+        profile_image_url: 'assets/img/max.jpg'
       },
       {
         id: 5,
-        name: 'Big Mike',
-        age: 31,
-        job_title: 'All guys are awesome',
-        profile_image_url: 'assets/img/mike.png'
+        name: 'Steins;Gate',
+        job_title: 'Sci-Fi, Thriller',
+        profile_image_url: 'assets/img/mike.jpg'
       },
       {
         id: 6,
-        name: 'Perry',
-        age: 41,
+        name: 'Gintama\'',
         job_title: 'Ionic again',
-        profile_image_url: 'assets/img/perry.png'
+        profile_image_url: 'assets/img/perry.jpg'
       }
     ]
 

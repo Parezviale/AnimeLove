@@ -5,6 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { Keyboard } from '@ionic-native/keyboard';
 
 import { WelcomePage } from '../pages/welcome/welcome';
+import { ExplorePage } from '../pages/explore/explore';
 
 @Component({
   templateUrl: 'app.html'
@@ -20,6 +21,6 @@ export class MyApp {
       splashScreen.hide();
       keyboard.disableScroll(true);
       keyboard.hideKeyboardAccessoryBar(true);
-    });
-  }
+      });
+    }
 }

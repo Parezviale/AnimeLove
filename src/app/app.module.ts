@@ -17,12 +17,16 @@ import { SettingsPage } from '../pages/settings/settings' ;
 import { MessagingPage } from '../pages/messaging/messaging';
 import { ChatPage } from '../pages/chat/chat';
 import { TinderPlusPage } from '../pages/tinder-plus/tinder-plus';
+import { UserLogin } from '../pages/user-login/user-login';
+import { UserSignup } from '../pages/user-signup/user-signup';
+import { UserForgotpassword } from '../pages/user-forgotpassword/user-forgotpassword';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Keyboard } from '@ionic-native/keyboard';
 import { SwingModule } from 'angular2-swing';
 import { ElasticModule } from 'ng-elastic';
+import { AuthService } from '../providers/auth-service/auth-service';
 
 @NgModule({
   declarations: [
@@ -37,7 +41,10 @@ import { ElasticModule } from 'ng-elastic';
     SettingsPage,
     MessagingPage,
     ChatPage,
-    TinderPlusPage
+    TinderPlusPage,
+    UserLogin,
+    UserSignup,
+    UserForgotpassword
   ],
   imports: [
     BrowserModule,
@@ -63,7 +70,10 @@ import { ElasticModule } from 'ng-elastic';
     SettingsPage,
     MessagingPage,
     ChatPage,
-    TinderPlusPage
+    TinderPlusPage,
+    UserLogin,
+    UserSignup,
+    UserForgotpassword
   ],
   providers: [
     StatusBar,
