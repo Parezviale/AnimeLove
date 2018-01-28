@@ -21,8 +21,8 @@ import { TinderPlusPage } from '../pages/tinder-plus/tinder-plus';
 import { UserLogin } from '../pages/user-login/user-login';
 import { UserSignup } from '../pages/user-signup/user-signup';
 import { UserForgotpassword } from '../pages/user-forgotpassword/user-forgotpassword';
+import { IonicStorageModule } from '@ionic/storage';
 
-import { HTTP} from '@ionic-native/http';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Keyboard } from '@ionic-native/keyboard';
@@ -60,6 +60,7 @@ import { AuthService } from '../providers/auth-service/auth-service';
       mode: 'ios',// TODO: to have same iOS look for all platforms
       backButtonText: '',
     }),
+    IonicStorageModule.forRoot(),
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -83,7 +84,6 @@ import { AuthService } from '../providers/auth-service/auth-service';
     StatusBar,
     SplashScreen,
     Keyboard,
-    HTTP,
     ImagePicker,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]

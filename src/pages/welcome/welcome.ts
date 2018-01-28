@@ -1,19 +1,20 @@
 import { Component, ViewChild, Inject } from '@angular/core';
 import { IonicPage, NavController, Slides, NavParams, App } from 'ionic-angular';
-import { Shows } from '../../providers/tinder-2'
+import { Database } from '../../providers/tinder-2'
 import { UserLogin } from '../user-login/user-login';
+import { Storage } from '@ionic/storage';
 
 @IonicPage()
 @Component({
   selector: 'page-welcome',
   templateUrl: 'welcome.html',
-  providers: [Shows],
+  providers: [Database],
 })
 export class WelcomePage {
   introSlides: any;
   @ViewChild('slides') slides: Slides;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public app: App, public shows: Shows) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public app: App, public storage: Storage, public db: Database) {
     this.introSlides = [
       {
         title: 'Discover new and interesting <br> anime',
@@ -32,7 +33,7 @@ export class WelcomePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad WelcomePage');
-    this.shows.getShows().then((data) => {
+    this.db.getShows().then((data) => {
     console.log(data);
      });
   }
