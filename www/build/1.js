@@ -1,14 +1,23 @@
 webpackJsonp([1],{
 
+<<<<<<< HEAD
 /***/ 621:
+=======
+/***/ 626:
+>>>>>>> Tom
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "TinderPlusPageModule", function() { return TinderPlusPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserSignupModule", function() { return UserSignupModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__tinder_plus__ = __webpack_require__(148);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__user_signup__ = __webpack_require__(149);
+>>>>>>> Tom
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +27,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var TinderPlusPageModule = (function () {
-    function TinderPlusPageModule() {
+var UserSignupModule = (function () {
+    function UserSignupModule() {
     }
-    return TinderPlusPageModule;
+    return UserSignupModule;
 }());
-TinderPlusPageModule = __decorate([
+UserSignupModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_2__tinder_plus__["a" /* TinderPlusPage */],
+            __WEBPACK_IMPORTED_MODULE_2__user_signup__["a" /* UserSignup */],
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__tinder_plus__["a" /* TinderPlusPage */]),
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__user_signup__["a" /* UserSignup */]),
         ],
+        exports: [
+            __WEBPACK_IMPORTED_MODULE_2__user_signup__["a" /* UserSignup */]
+        ]
     })
-], TinderPlusPageModule);
+], UserSignupModule);
 
-//# sourceMappingURL=tinder-plus.module.js.map
+//# sourceMappingURL=user-signup.module.js.map
 
 /***/ })
 

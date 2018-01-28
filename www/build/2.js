@@ -1,14 +1,23 @@
 webpackJsonp([2],{
 
+<<<<<<< HEAD
 /***/ 618:
+=======
+/***/ 624:
+>>>>>>> Tom
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "SettingsPageModule", function() { return SettingsPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserLoginModule", function() { return UserLoginModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__settings__ = __webpack_require__(147);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__user_login__ = __webpack_require__(57);
+>>>>>>> Tom
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +27,29 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var SettingsPageModule = (function () {
-    function SettingsPageModule() {
+var UserLoginModule = (function () {
+    function UserLoginModule() {
     }
-    return SettingsPageModule;
+    UserLoginModule.prototype.mytest = function () {
+        console.log("this is my test");
+    };
+    return UserLoginModule;
 }());
-SettingsPageModule = __decorate([
+UserLoginModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_2__settings__["a" /* SettingsPage */],
+            __WEBPACK_IMPORTED_MODULE_2__user_login__["a" /* UserLogin */],
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__settings__["a" /* SettingsPage */]),
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__user_login__["a" /* UserLogin */]),
         ],
+        exports: [
+            __WEBPACK_IMPORTED_MODULE_2__user_login__["a" /* UserLogin */]
+        ]
     })
-], SettingsPageModule);
+], UserLoginModule);
 
-//# sourceMappingURL=settings.module.js.map
+//# sourceMappingURL=user-login.module.js.map
 
 /***/ })
 

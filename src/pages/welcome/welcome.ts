@@ -1,7 +1,7 @@
 import { Component, ViewChild, Inject } from '@angular/core';
 import { IonicPage, NavController, Slides, NavParams, App } from 'ionic-angular';
 import { Shows } from '../../providers/tinder-2'
-import { ExplorePage } from '../explore/explore';
+import { UserLogin } from '../user-login/user-login';
 
 @IonicPage()
 @Component({
@@ -37,10 +37,10 @@ export class WelcomePage {
      });
   }
 
-  goToSwipe() {
-    this.app.getRootNav().setRoot(ExplorePage)
+  goToAuth() {
+    this.app.getRootNav().setRoot(UserLogin)
       .then(() => {
-        console.log('Welcome to your ExplorePage!');
+        console.log('Welcome to your AuthPage!');
       })
   }
 

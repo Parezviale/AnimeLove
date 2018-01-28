@@ -1,14 +1,23 @@
 webpackJsonp([7],{
 
+<<<<<<< HEAD
 /***/ 614:
+=======
+/***/ 619:
+>>>>>>> Tom
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "MatchedPageModule", function() { return MatchedPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProfileEditPageModule", function() { return ProfileEditPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__matched__ = __webpack_require__(144);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__profile_edit__ = __webpack_require__(82);
+>>>>>>> Tom
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +27,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var MatchedPageModule = (function () {
-    function MatchedPageModule() {
+var ProfileEditPageModule = (function () {
+    function ProfileEditPageModule() {
     }
-    return MatchedPageModule;
+    return ProfileEditPageModule;
 }());
-MatchedPageModule = __decorate([
+ProfileEditPageModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_2__matched__["a" /* MatchedPage */],
+            __WEBPACK_IMPORTED_MODULE_2__profile_edit__["a" /* ProfileEditPage */],
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__matched__["a" /* MatchedPage */]),
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__profile_edit__["a" /* ProfileEditPage */]),
         ],
     })
-], MatchedPageModule);
+], ProfileEditPageModule);
 
-//# sourceMappingURL=matched.module.js.map
+//# sourceMappingURL=profile-edit.module.js.map
 
 /***/ })
 

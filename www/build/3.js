@@ -1,14 +1,23 @@
 webpackJsonp([3],{
 
+<<<<<<< HEAD
 /***/ 619:
+=======
+/***/ 623:
+>>>>>>> Tom
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ProfilePageModule", function() { return ProfilePageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "UserForgotpasswordModule", function() { return UserForgotpasswordModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(1);
+<<<<<<< HEAD
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(16);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__profile__ = __webpack_require__(81);
+=======
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(11);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__user_forgotpassword__ = __webpack_require__(148);
+>>>>>>> Tom
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +27,26 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var ProfilePageModule = (function () {
-    function ProfilePageModule() {
+var UserForgotpasswordModule = (function () {
+    function UserForgotpasswordModule() {
     }
-    return ProfilePageModule;
+    return UserForgotpasswordModule;
 }());
-ProfilePageModule = __decorate([
+UserForgotpasswordModule = __decorate([
     Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
         declarations: [
-            __WEBPACK_IMPORTED_MODULE_2__profile__["a" /* ProfilePage */],
+            __WEBPACK_IMPORTED_MODULE_2__user_forgotpassword__["a" /* UserForgotpassword */],
         ],
         imports: [
-            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__profile__["a" /* ProfilePage */]),
+            __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__user_forgotpassword__["a" /* UserForgotpassword */]),
         ],
+        exports: [
+            __WEBPACK_IMPORTED_MODULE_2__user_forgotpassword__["a" /* UserForgotpassword */]
+        ]
     })
-], ProfilePageModule);
+], UserForgotpasswordModule);
 
-//# sourceMappingURL=profile.module.js.map
+//# sourceMappingURL=user-forgotpassword.module.js.map
 
 /***/ })
 
