@@ -21,8 +21,8 @@
         <div class="big-thumb" (click)="openProfile()">
           <img src="assets/img/hieu.png" class="rounded box-shadow" alt="">
         </div>
-        <div class="text-2x">Hieu, 29</div>
-        <div class="">Front-end dev. UX/UI lover</div>
+        <div class="text-2x">{{user.name}}, {{user.age}}</div>
+        <div class="">{{user.bio}}</div>
       </div>
 
       <div>
@@ -42,51 +42,6 @@
             </ion-col>
           </ion-row>
         </ion-grid>
-      </div>
-    </div>
-
-    <div flex two class="me-bottom-bg">
-      <div class="oval"></div>
-
-      <ion-slides pager class="bottom-slides" autoplay="3000" (ionSlideDidChange)="slideChanged()">
-        <ion-slide>
-          <div class="slide-title">
-            <ion-icon name="md-flame" color="gold"></ion-icon>
-            Get Tinder Gold
-          </div>
-          <p>See who Likes You & more</p>
-        </ion-slide>
-        <ion-slide>
-          <div class="slide-title">
-            <ion-icon name="ios-flash" color="superlike"></ion-icon>
-            Get Matches Faster
-          </div>
-          <p>Boost your profile once a month</p>
-        </ion-slide>
-        <ion-slide>
-          <div class="slide-title">
-            <ion-icon name="md-star" color="star"></ion-icon>
-            Stand Out with Super Likes
-          </div>
-          <p>You're 3x more likely to get a match!</p>
-        </ion-slide>
-        <ion-slide>
-          <div class="slide-title">
-            <ion-icon name="md-pin" color="superlike"></ion-icon>
-            Swipe Around The World
-          </div>
-          <p>Passport to anywhere with Tinder Plus!</p>
-        </ion-slide>
-      </ion-slides>
-
-      <div class="wrapper text-center">
-        <button *ngIf="currentSlideIndex == 0" ion-button color="light" class="btn-default" (click)="openTinderPlus()">
-          <span ion-text color="gold">GET TINDER GOLD</span>
-        </button>
-
-        <button *ngIf="currentSlideIndex != 0" ion-button color="light" class="btn-default" (click)="openTinderPlus()">
-          MY TINDER PLUS
-        </button>
       </div>
     </div>
   </div>
