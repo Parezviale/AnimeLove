@@ -5,7 +5,8 @@ import { MyApp } from './app.component';
 import { DirectivesModule } from '../directives/directives.module';
 import { ComponentsModule } from '../components/components.module';
 import { ImagePicker } from '@ionic-native/image-picker';
-
+import { HttpModule } from '@angular/http';
+import {HttpClientModule} from '@angular/common/http';
 import { ExplorePage } from '../pages/explore/explore';
 import { WelcomePage } from '../pages/welcome/welcome';
 import { MatchedPage } from '../pages/matched/matched';
@@ -17,7 +18,7 @@ import { SettingsPage } from '../pages/settings/settings' ;
 import { MessagingPage } from '../pages/messaging/messaging';
 import { ChatPage } from '../pages/chat/chat';
 import { TinderPlusPage } from '../pages/tinder-plus/tinder-plus';
-
+import { HTTP} from '@ionic-native/http';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Keyboard } from '@ionic-native/keyboard';
@@ -43,6 +44,8 @@ import { ElasticModule } from 'ng-elastic';
     BrowserModule,
     SwingModule,
     ElasticModule,
+    HttpModule,
+    HttpClientModule,
     DirectivesModule,
     ComponentsModule,
     IonicModule.forRoot(MyApp, {
@@ -69,6 +72,7 @@ import { ElasticModule } from 'ng-elastic';
     StatusBar,
     SplashScreen,
     Keyboard,
+    HTTP,
     ImagePicker,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
