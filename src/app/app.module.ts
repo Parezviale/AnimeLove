@@ -5,7 +5,8 @@ import { MyApp } from './app.component';
 import { DirectivesModule } from '../directives/directives.module';
 import { ComponentsModule } from '../components/components.module';
 import { ImagePicker } from '@ionic-native/image-picker';
-
+import { HttpModule } from '@angular/http';
+import {HttpClientModule} from '@angular/common/http';
 import { ExplorePage } from '../pages/explore/explore';
 import { WelcomePage } from '../pages/welcome/welcome';
 import { MatchedPage } from '../pages/matched/matched';
@@ -21,6 +22,7 @@ import { UserLogin } from '../pages/user-login/user-login';
 import { UserSignup } from '../pages/user-signup/user-signup';
 import { UserForgotpassword } from '../pages/user-forgotpassword/user-forgotpassword';
 
+import { HTTP} from '@ionic-native/http';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { Keyboard } from '@ionic-native/keyboard';
@@ -50,6 +52,8 @@ import { AuthService } from '../providers/auth-service/auth-service';
     BrowserModule,
     SwingModule,
     ElasticModule,
+    HttpModule,
+    HttpClientModule,
     DirectivesModule,
     ComponentsModule,
     IonicModule.forRoot(MyApp, {
@@ -79,6 +83,7 @@ import { AuthService } from '../providers/auth-service/auth-service';
     StatusBar,
     SplashScreen,
     Keyboard,
+    HTTP,
     ImagePicker,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]

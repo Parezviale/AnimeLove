@@ -1,31 +1,23 @@
-import { Injectable } from '@angular/core';
-import { Http, Headers } from '@angular/http';
+import { Injectable, Injector } from '@angular/core';
+import { Http } from '@angular/http';
 import 'rxjs/add/operator/map';
+import 'rxjs/Rx'
  
 @Injectable()
 export class Shows {
  
-  data: any;
- 
-  constructor(public http: Http) {
-    this.data = null;
+  constructor(private http: Http) {
   }
  
   getShows(){
  
-    if (this.data) {
-      return Promise.resolve(this.data);
-    }
- 
     return new Promise(resolve => {
- 
-      this.http.get('http://localhost:8080/api/shows')
-        .map(res => res.json())
-        .subscribe(data => {
-          this.data = data;
-          resolve(this.data);
+    var url = 'http://localhost:8080/api/initReccomendation';
+        this.http.get(url)
+            .subscribe(data => {
+              resolve(data);
+            });
         });
-    });
  
   }
  

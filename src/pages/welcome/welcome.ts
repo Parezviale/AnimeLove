@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, ViewChild, Inject } from '@angular/core';
 import { IonicPage, NavController, Slides, NavParams, App } from 'ionic-angular';
 import { Shows } from '../../providers/tinder-2'
 import { UserLogin } from '../user-login/user-login';
@@ -7,12 +7,13 @@ import { UserLogin } from '../user-login/user-login';
 @Component({
   selector: 'page-welcome',
   templateUrl: 'welcome.html',
+  providers: [Shows],
 })
 export class WelcomePage {
   introSlides: any;
   @ViewChild('slides') slides: Slides;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams, public app: App) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, public app: App, public shows: Shows) {
     this.introSlides = [
       {
         title: 'Discover new and interesting <br> anime',
@@ -30,11 +31,10 @@ export class WelcomePage {
   }
 
   ionViewDidLoad() {
-  ///var shows = new Shows();
     console.log('ionViewDidLoad WelcomePage');
-    /// shows.getShows().then((data) => {
-    ///  console.log(data);
-    /// });
+    this.shows.getShows().then((data) => {
+    console.log(data);
+     });
   }
 
   goToAuth() {
